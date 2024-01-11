@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="../dist/style.css">
     <title>Document</title>
 </head>
-<body class="relative">
-        <header class="container flex items-center gap-x-40 lg:gap-x-80">
+<body class="relative duration-1000">
+        <header id="header" class="container flex items-center gap-x-40 lg:gap-x-80">
             <img class="w-16" src="../assets/Group 5 1.svg" alt="">
             <ul class="hidden lg:flex gap-x-10">
                 <li>HOME</li>
@@ -18,7 +18,7 @@
             <div class="flex gap-x-3">
             <button onclick="dark()"> <img id="dark-mod" class="w-10 " src="../assets/Group 4.svg" alt=""> </button>
             <button><img class="w-14 lg:hidden" src="../assets/Frame 31 (1).svg" alt=""></button>
-            <div class="hidden lg:flex gap-x-3 ">
+            <div id="sin-sup" class="hidden lg:flex gap-x-3 ">
             <button class=" w-max h-max px-8 py-4 border-[#C7B66C] border-[1.5px] rounded-xl text-[#C7B66C]  hover:bg-[#CCB96D] hover:text-white  duration-200 ">sign in</button>
             <button class=" w-max h-max px-8 py-4 bg-[#C7B66C] rounded-xl text-white " onclick="signUp()">sign up</button>
             </div>
@@ -30,7 +30,7 @@
         </div>
              <div class="flex flex-col gap-y-5">
             <img class="lg:w-96" src="../assets/person of interest - Copy.svg" alt="">
-            <p class="text-[19px]"> is an American science fiction crime drama television <br> series that aired on <br> CBS from September 22, 2011,[
+            <p class="text-[19px] "> is an American science fiction crime drama television <br> series that aired on <br> CBS from September 22, 2011,[
                 to June 21, 2016,with its five seasons consisting of <br> 103 episodes. The series was created by <br> Jonathan Nolan; executive producers were <br> Nolan, J. J. Abrams, Bryan Burk, Greg Plageman, Denise Thé, and Chris Fisher.
                 </p>
                 <div class="flex flex-col gap-y-5 lg:gap-x-5 lg:flex-row">
@@ -120,12 +120,15 @@
         <div class="container  absolute flex flex-col items-center justify-center mt-10 bg-[#000] rounded-md w-max h-max p-28 top-[-1000px] duration-1000"  id="form-up">
             <img src="../assets/Group 5 1.svg" alt="">
             <div class="flex flex-col gap-y-5">
-                <label class="text-white" for="email2">Email:</label>
+                <label class="text-white" for="email2" id="label-1">Email:</label>
                 <input id="email2" class="p-2 rounded-md outline-none w-52 text-white bg-[#000]  border-[#fff] border-[1.5px]" type="email">
-                <label class="text-white" for="password2">Password:</label>
+                <label class="text-white" for="password2" id="label-2">Password:</label>
                 <input id="password2" class="p-2 rounded-md outline-none w-52 text-white bg-[#000]  border-[#fff] border-[1.5px] " type="password">
-                <label class="text-white" for="Confirm-Password">Confirm Password</label>
+                <label class="text-white" for="Confirm-Password" id="label-3">Confirm Password</label>
                 <input id="Confirm-Password" class="p-2 rounded-md text-white outline-none w-52 bg-[#000]  border-[#fff] border-[1.5px] " type="password">
+                <div id="errors" class="text-[red] font-bold">
+                    
+                </div>
                 <button onclick="home()" class="bg-[#CCB96D] p-5 rounded-md text-white">sign Up</button>
                 <button class="p-5 border-[#CCB96D] border-[1.5px] text-[#CCB96D] rounded-md hover:bg-[#CCB96D] hover:text-white  duration-200">sign in</button>
             </div>
