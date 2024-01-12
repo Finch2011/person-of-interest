@@ -42,8 +42,8 @@ else{
 }
 }
 function dark(){
-    if(darkMod.src == "file:///C:/Users/mohamad/OneDrive/Desktop/person%20of%20interest/assets/Group%204.svg" ){
-        darkMod.src = "file:///C:/Users/mohamad/OneDrive/Desktop/person%20of%20interest/assets/Group%2030.svg"
+    if(darkMod.src == "file:///C:/Users/mohamad/OneDrive/Desktop/project/person%20of%20interest/assets/Group%204.svg" ){
+        darkMod.src = "file:///C:/Users/mohamad/OneDrive/Desktop/project/person%20of%20interest/assets/Group%2030.svg"
         body.style.backgroundColor = "#000"
         body.style.color = "#fff"
         formUp.style.backgroundColor ="#fff"
@@ -62,8 +62,8 @@ function dark(){
 
         
     }
-    else if(darkMod.src == "file:///C:/Users/mohamad/OneDrive/Desktop/person%20of%20interest/assets/Group%2030.svg"){
-        darkMod.src = "file:///C:/Users/mohamad/OneDrive/Desktop/person%20of%20interest/assets/Group%204.svg"
+    else if(darkMod.src == "file:///C:/Users/mohamad/OneDrive/Desktop/project/person%20of%20interest/assets/Group%2030.svg"){
+        darkMod.src = "file:///C:/Users/mohamad/OneDrive/Desktop/project/person%20of%20interest/assets/Group%204.svg"
         body.style.backgroundColor = "#fff"
         body.style.color = "#000"
         formUp.style.backgroundColor ="#000"
