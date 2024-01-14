@@ -4,19 +4,19 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../dist/style.css">
-    <title>Document</title>
+    <title>HOME</title>
 </head>
 <body class="relative duration-1000">
         <header id="header" class="container flex items-center gap-x-40 lg:gap-x-80">
             <img class="w-16" src="../assets/Group 5 1.svg" alt="">
             <ul class="hidden lg:flex gap-x-10">
-                <li class="hover:text-[#C7B66C] duration-500 font-bold"><a href="#">HOME</a></li>
+                <li class="hover:text-[#C7B66C] duration-500 font-bold"><a href="./index.html">HOME</a></li>
                 <li class="hover:text-[#C7B66C] duration-500 font-bold"><a href="#">FACT</a></li>
-                <li class="hover:text-[#C7B66C] duration-500 font-bold"><a href="#">ABOUT</a></li>
-                <li class="hover:text-[#C7B66C] duration-500 font-bold"><a href="./blog.html">BLOG</a></li>
+                <li class="hover:text-[#C7B66C] duration-500 font-bold"><a href="./about.html" target="_blank">ABOUT</a></li>
+                <li class="hover:text-[#C7B66C] duration-500 font-bold"><a href="./blog.html" target="_blank">BLOG</a></li>
             </ul>
             <div class="flex gap-x-3">
-            <button onclick="dark()"> <img id="dark-mod" class="w-10 " src="../assets/Group 4.svg" alt=""> </button>
+            <button id="btn" onclick="toggle()"> <img id="dark-mod" class="w-10 " src="../assets/Group 4.svg" alt=""> </button>
             <button><img class="w-14 lg:hidden" src="../assets/Frame 31 (1).svg" alt=""></button>
             <div id="sin-sup" class="hidden lg:flex gap-x-3 ">
             <button class=" w-max h-max px-8 py-4 border-[#C7B66C] border-[1.5px] rounded-xl text-[#C7B66C]  hover:bg-[#CCB96D] hover:text-white  duration-500 ">sign in</button>
@@ -26,7 +26,7 @@
         </header>
         <section class="container flex flex-col mt-10 gap-y-14 lg:flex-row lg:gap-x-20">
             <div>
-            <img class="lg:w-[600px]" src="../assets/Group 1.svg" alt="">
+            <img class="lg:w-[600px] animate__tada" src="../assets/Group 1.svg" alt="">
         </div>
              <div class="flex flex-col gap-y-5">
             <img class="lg:w-96" src="../assets/person of interest - Copy.svg" alt="">
@@ -114,7 +114,7 @@
                     </p>
             </div>
             <div class="container flex justify-center p-5">
-                <img class="w-56 lg:w-72" src="../assets/Frame 39.svg" alt="">
+                <img class="w-56 lg:w-72" src="../assets/Group 42.svg" alt="">
             </div>
         </footer>
         <div class="container  absolute flex flex-col items-center justify-center mt-10 bg-[#000] rounded-md w-max h-max p-28 top-[-1000px] duration-1000"  id="form-up">
@@ -130,7 +130,10 @@
                     
                 </div>
                 <button onclick="home()" class="bg-[#CCB96D] p-5 rounded-md text-white">sign Up</button>
-                <button class="p-5 border-[#CCB96D] border-[1.5px] text-[#CCB96D] rounded-md hover:bg-[#CCB96D] hover:text-white  duration-200">sign in</button>
+                <div class="flex justify-center gap-x-3"> 
+                    <button onclick="closeUp()" class="p-3 bg-[#567581] text-white rounded-lg">close</button>
+                    <button class="p-3 border-[#CCB96D] border-[1.5px] text-[#CCB96D] rounded-md hover:bg-[#CCB96D] hover:text-white  duration-200">sign in</button>
+                </div>
             </div>
         </div>
         <script src="../src/js/script.js"></script>
